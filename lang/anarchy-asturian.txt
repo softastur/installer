@@ -1,0 +1,1042 @@
+### anarchy-asturian.conf
+### By: Softastur
+###
+### This is the language file for Anarchy Linux.
+### This file is sourced at the beginning of the install based of the language you select
+### If you would like to help out in translating this file into your language you can easily do so by changing the variables
+###
+### Enter the name of the translator "By:" and any notes you would like to include in above comments
+### Please save your finished translation in the following format:
+###
+### anarchy-<language-here>.conf
+###
+### You may send any completed translations to the developer for it to be included in the next release:
+###
+### deadhead3492@gmail.com
+###
+### First change this variable to the correct utf-8 locale for your language.
+### Example: en_GB.UTF-8, pt_PT.UTF-8, ru_RU.UTF-8, ro_RO.UTF-8
+
+LANG="ast_ES.UTF-8"
+
+### Important: Please be sure you are using UTF-8 encoding before beginning the translation!
+### Do not change the variable names for example intro_msg=
+### Do not remove any occurrence of \n or \n\n this tells program to create a new line and should not be changed
+### Do not remove any special characters such as $a, or quotes.
+### Do not edit the names of the functions example main_msg() or remove any function brackets: { }
+### Do not edit any variables within the text for example: /dev/$DRIVE and: $user
+###
+### NOTE: Translations for additional software / desktops can be found in: etc/anarchy.conf
+### The additional translations may be added to this translation file
+### You may translate any full words contained between the quotes ""
+### Translations begin here:
+
+### New lines to translate will be added here. Do not remove these functions
+### You may, if you wish, add lines to other functions after translation
+### -------------------------------------------------------------------------------------------------
+
+translate_this() {
+
+clear
+}
+
+translate_this_var() {
+
+clear
+}
+
+### -------------------------------------------------------------------------------------------------
+
+dialog_msg() {
+
+title=" -| Anarchy |- "
+
+backtitle=" -| Instalador Anarchy Linux |- "
+
+}
+
+main_msg() {
+
+error="\Z1Fallu:\Zn"
+
+yes="Sí"
+
+no="Non"
+
+ok="Aceutar"
+
+cancel="Encaboxar"
+
+other="Otra"
+
+default="Default"
+
+edit="Editar"
+
+back="Atrás"
+
+done_msg="Fecho"
+
+partition="Partición"
+
+size="Tamañu"
+
+add="Amestar"
+
+new_user="Usuariu nuevu"
+
+change_pass="Camudar la contraseña"
+
+change_fn="Camudar el nome d'usuariu"
+
+change_sh="Camudar la shell"
+
+change_su="Camudar los privilexos"
+
+del_user="Desaniciar l'usuariu"
+
+install="Instalar"
+
+mountpoint="Puntu de montaxe"
+
+custom="Personalizar"
+
+write="Escribir los cambeos"
+
+none="Nada"
+
+select="Esbillar"
+
+drivers="Controladores"
+
+os="Códigu abiertu"
+
+custom_msg="Introduz un puntu de montaxe personalizáu: \n\n $a Va montase so «/»"
+
+custom_err_msg0="\n$error El puntu de montaxe nuevu nun pue contener caráuteres especiales…"
+
+custom_err_msg1="\n$error El puntu de montaxe nuevu nun pue ser «/»"
+
+write_confirm="¿Escribir los cambeos nel discu?"
+
+intro_msg="¡Afáyate nel instalador Anarchy Linux! \n\n $a ¿Prestaríate apenzar col procesu d'instalación?"
+
+wifi_msg0="Deteutóse una interfaz Wi-Fi, ¿prestaríate coneutate a la rede?"
+
+wifi_msg1="Nun pue coneutase a la Wi-Fi, colando del instalador."
+
+connect_err0="$error Nun hai conexón a la rede, colando del instalador."
+
+connect_err1=$(echo -e "\n ${Red}$error ${Yellow}Has tar coneutáu a internet pa instalar Arch Linux.\n Comprueba la conexón y volvi tentalo, por favor.\n\n Pa consiguir la Información de les conexones, executa: \n\n    ${Green}ip add \n    ip link \n    wifi-menu ${ColorOff}\n\n")
+
+locale_msg="Esbilla la locale que desees:"
+
+zone_msg0="Esbilla'l fusu horariu nel que tas:"
+
+zone_msg1="Escueyi la rexón na que tas:"
+
+keys_msg="Esbilla un mapa de tecles: \n\n $a Si duldes dexa lo predeterminao"
+
+drive_msg="Particionáu automáticu:\n $a Esbilla la unidá onde instalar Arch Linux \n $a NOTA: La unidá esbillada va formatiase"
+
+part_msg="Esbilla'l métodu de particionáu que desees: \n\n $a DECÁTATE que'l particionáu automáticu va formatiar la unidá esbillada \n $a Primi Encaboxar pa volver a la esbilla d'unidaes"
+
+menu_msg="Volver al menú"
+
+fs_msg="Esbilla la triba del sistema de ficheros que desees: \n\n $a El predetermináu ye EXT4"
+
+swap_msg0="¿Prestaríate crear un espaciu d'intercambéu? \n\n $a (Aconséyense 512M - 1024M d'espaciu en discu)"
+
+swap_msg1="Especifica'l tamañu deseáu del intercambéu: \n\n $a (Usa «M» pa MiB o «G» pa GiB):"
+
+swap_err_msg0="$error ¡nun hai abondu espaciu na unidá!"
+
+swap_err_msg1="$error l'espaciu d'intercambéu ha acabar en «M» pa MiB o «G» pa GiB"
+
+swap_err_msg2="\n$error falló l'activación del intercambéu, prueba a formatialu primero \n\n $a Volviendo al menú de particionáu…"
+
+efi_msg0="¿Prestaríate activar la BIOS UEFI? \n\n $a Quiciabes nun funcione en dalgunos sistemes \n $a Activa esta carauterística con curiáu"
+
+gpt_msg="¿Prestaríate usar el particionáu GPT? \n\n $a (Tabla de particiones per GUID)"
+
+install_type_msg="Esbilla la triba de sistema que te prestaría instalar: \n\n $a Si duldes usa «Base» o «Base-devel»"
+
+passwd_msg0="$error equí has introducir una contraseña."
+
+passwd_msg1="Les contraseñes nun concasen, volvi tentalo…"
+
+part_err_msg="Deteutóse un fallu nel particionáu \n\n $a Volviendo al menú de particionáu"
+
+part_err_msg1="Fallu de montaxe/desmontaxe \n\n Volviendo al menú…"
+
+part_err_msg2="\n$error falló'l montaxe de la unidá \n\n Volviendo al menú de particionáu…"
+
+manual_part_msg="Particionáu manual guiáu: \n $a Esbilla la unida a la que quieras editar l'esquema de particiones \n $a Esbilla la partición a la que quieras editar el puntu de montaxe \n $a Esbilla «Fecho» al acabar"
+
+root_err_msg="$error la partición ye mui pequeña como pa que seya'l raigañu. \n\n $a La partición raigañu ha tener 4 GiB de tamañu polo menos"
+
+root_err_msg1="$error has esbillar una partición raigañu enantes de siguir cola instalación."
+
+write_confirm_msg="Confirmación de la escritura de cambeos nel discu:"
+
+return_msg="\n ${Yellow}Abriesti una sesión nueva en llinia de comandos.\n Esto permítete executar cualesquier comandu personalizáu dende l'instalador.\n\n L'instalador Anarchy ta entá executándose en segundu planu\n Volvi a la instalación onde la dexesti col comandu: \n ${Green}anarchy\n exit\n${ColorOff}"
+
+arch_chroot_msg="\n ${Yellow}You have opened a new anarchy-chroot session.\n This enables you to run commands on your newly installed system.\n\n Note: This is not a standard terminal emulator.\n Commands here are fed into installed system and the results displayed\n Up/down arrow history and most standard commands work \n To show this message again type: ${Green}help \n ${Yellow}You may install or search packages with the commands:\n\n    ${Green}pacman -S <install package(s) here>\n    pacman -Ss <search-package-here>\n\n ${Yellow}You may edit text files with nano or vim editors: \n\n    ${Green}nano /path/to/file\n    vim /path/to/file\n\n ${Yellow}The Anarchy installer is still running in the background.\n Return to the installer with the command:\n\n    ${Green}anarchy\n    exit\n${ColorOff}"
+
+mirror_msg0="Update mirrorlist:"
+
+mirror_msg1="Escueyi'l códigu del país nel que tas:"
+
+mirror_editor_msg="Esbilla l'editor de testos pa editar los espeyos:"
+
+manual_mirrors="Editar la llista d'espeyos"
+
+update_mirrors_msg="Baxar y clasificar espeyos nuevos"
+
+cancel_mirrors="Saltar l'anovamientu de la llista d'espeyos"
+
+mirror_cancel_msg="¿De xuru que quies saltar l'anovamientu de los espeyos? \n\n $a Esto pue afeutar a la velocidá de descarga"
+
+wifi_option_msg="Install wireless utilities? Provides wifi support. \n\n $a Necessary for connecting to wifi \n $a Select yes if using wifi"
+
+wifi_util_msg="Esbilla la utilidá pa redes que desees: \n\n $a La predeterminada ye netctl (esbilla NetworkManager pa la IGU)"
+
+net_util_msg0="Utilidá pa redes netctl (wifi-menu)"
+
+net_util_msg1="Utilidá NetworkManager (nmcli)"
+
+pppoe_msg="Include support for PPPoE DSL connections? \n\n $a Select yes if using PPPoE \n $a If unsure select No"
+
+base_msg0="Kernel estándar"
+
+base_msg1="Kernel estándar con base-devel"
+
+hardened_msg0="Kernel reforciáu"
+
+hardened_msg1="Kernel reforciáu con base-devel"
+
+LTS_msg0="Long term support kernel"
+
+LTS_msg1="Long term support kernel with base-devel"
+
+zen_msg0="Kernel Zen"
+
+zen_msg1="Kernel Zen con base-devel"
+
+os_prober_msg="¿Instalar os-prober? \n\n $a Ríquese pal arrinque d'otros sistemes operativos \n $a Si ye'l casu esbilla Sí"
+
+grub_warn_msg0="¡Alvertencia! El sistema nun va arrincar \n\n $a Vas precisar la configuración d'un cargador d'arrinque \n $a ¿Quies siguir?"
+
+grub_warn_msg1="After install is complete choose not to reboot, you may choose to keep the system mounted at /mnt allowing you to arch-chroot into it and configure your own boot loader."
+
+syslinux_warn_msg="La instalación de syslinux nel mou BIOS rique que se desactive'l sofitu pa volúmenes de 64 bits na partición d'arrinque.\n\n $a Nota: Esto va formatiar la partición /boot\n ¿Siguir cola desactivación d'esta opción?"
+
+exit_msg="Ready to install system \n\n $a Are you sure you want to exit to menu?"
+
+install_err_msg0="$error ell sistema de ficheros raigañu yá s'instaló \n\n $a Volviendo al menú."
+
+install_err_msg1="$error nun se montó nengún sistema de ficheros \n\n $a ¿Volver al particionáu de preseos?"
+
+multilib_msg="Deteutóse l'arquiteutura de 64 bits.\n\n $a ¿Amestar el depósitu multilib en pacman.conf? \n (Permite la instalación de software de 32 bits nesti sistema)"
+
+dhcp_msg="¿Activar el DHCP nel arrinque? (Aconséyase)\n\n $a Dynamic Host Control Protocol \n   (Configuración automática d'IPs)"
+
+host_msg="Afita'l nome d'agospiu del sistema:\n\n $a El nome del ordenador/agospiu \n $a Ensin espacios o caráuteres espciales"
+
+host_err_msg="$error el nome d'agospiu ha apenzar per una lletra y nun pue contener caráuteres especiales. \n\n $a Volvi tentalo, por favor."
+
+user_exists_msg="¿Prestaríate amestar más cuentes d'usuariu? \n\n $a Esbilla Sí p'amestalos."
+
+user_menu_msg="Amiesta o editar cuentes d'usuariu:\n\n            Nome d'usuariu:   |   Shell:"
+
+user_msg0="¿Crear una cuenta d'usuariu nueva \n\n $a (Aconséyase) Crea un usuariu agora."
+
+user_msg1="Afita un nome d'usuariu: \n\n $a Namás lletres minúscules y númberos \n $a Nun se permiten mayúscules o caráuteres especiales"
+
+user_msg2="Set full username: \n\n $a Write your full name"
+
+user_err_msg="$error el nome d'usuariu ha apenzar per una lletra y nun pue contener caráuteres especiales o mayúscules. \n\n $a Volvi tentalo…"
+
+user_err_msg1="$error el nome d'usuariru yá ta n'usu. \n\n $a Volvi tentalo"
+
+user_err_msg2="$error has introducir un nome d'usuariu \n\n $a Volvi tentalo" 
+
+fulluser_err_msg="$error Hai caráuteres prohibíos (,)\n\n $a Volvi tentalo"
+
+fulluser_err_msg1="$error Esti nome yá ta n'usu.\n\n $a Volvi tentalo"
+
+graphics_msg="Esbilla'l controlador gráficu que desees:\nDeteutóse'l chipset: $chipset  \n\n $a Si duldes, usa xf86-video-vesa o'l predetermináu"
+
+desktop_cancel_msg="¿De xuru que nun quies nengún entornu d'escritoriu? \n\n $a Vas arrincar namás nel mou de llinia de comandos."
+
+nvidia_msg="Esbilla'l controlador de Nvidia que desees: \n\n $a Primi Encaboxar si nun quies nengún"
+
+touchpad_msg="¿Prestaríate instalar el controlador xf86-input?  \n\n $a Ríquese pal sofitu de los paneles táutiles de los portátiles."
+
+desktop_msg="¿Prestaríate instalar un entornu gráficu? \n\n $a Esbilla Sí pa instalar un entornu d'escritoriu"
+
+dm_msg="¿Prestaríate instalar un xestor de pantalles? \n\n $a Un xestor gráficu d'anicios de sesión"
+
+dm_msg1="Esbilla'l xestor de pantalles que desees:\n\n $a El predetermináu ye lightdm"
+
+environment_msg="Esbilla l'entornu que desees:\n $a Usa la tecla d'espaciu pa des/marcar \n $a Primi intro cuando acabes"
+
+startx_msg="Creóse'l ficheru xinitrc. \n\n $a Dempués d'aniciar sesión usa'l comandu «startx» p'acceder al escritoriu."
+
+extra_msg0="¿Instalar les caxigalines de XFCE? \n\n $a Programes adicionales pa XFCE"
+
+extra_msg1="¿Instalar el grupu gnome-extra? \n\n $a Programes adicionales pa Gnome"
+
+extra_msg2="¿Instalar el grupu mate-extra? \n\n $a Programes adicionales pa Mate"
+
+extra_msg3="\n $a ¿Instalar plasma-desktop?"
+
+extra_msg4="¿Instalar el grupu deepin-extra? \n\n $a Programes adicionales pa Deepin"
+
+extra_msg5="¿Instalar xmonad-contrib? \n\n $a Programes adicionales pa xmonad"
+
+extra_msg6="¿Instalar el grupu gnome? \n\n $a Programes del grupu de Gnome"
+
+extra_msg7="¿Instalar windowmaker-extra? \n\n $a Programes adicionales pa WindowMaker"
+
+extra_msg8="Install desktop extras software? \n\n $a Adds additional desktop software (recommended)"
+
+software_msg0="¿Prestaríate instalar dalgún programa adicional? \n\n $a Esbilla Sí pa ver la llista de software adicional"
+
+software_msg1="Escueyi'l software que desees: \n $a Usa la tecla d'espaciu pa des/marcar \n $a Primi intro cuando acabes"
+
+software_type_msg="Esbilla la triba de software que desees \n\n $a Primi «Instalar» al acabar d'esbillar"
+
+software_warn_msg="¿De xuru que quies siguir ensin nengún software adicional? \n\n $a Primi Sí pa facelo."
+
+software_noconfirm_msg="¿De xuru que nun quies instalar nengún programa de"
+
+complete_no_boot_msg="¡Completóse'l procesu d'instalación! \n\n $a Nun configuresti nengún cargador d'arrinque \n $a ¿Volver a la llinia de comandos pa configuralu?"
+
+not_complete_msg="La instalación nun se completó, ¿de xuru que quies reaniciar?"
+
+complete_msg="La instalación completóse con ésitu. \n\n $a ¿Qué te prestaría facer agora?"
+
+part_frmt_msg="¿Prestaríate formatiar la partición esbillada? \n\n $a Esbilla Sí pa formatiala. \n $a Non pa montar esa partición ensin formatiala."
+
+swap_frmt_msg="¿Prestaríate formatiar l'espaciu d'intercambéu? \n\n $a Esbilla Sí pa facelo. \n $a Non p'activar esi espaciu ensin formatialu."
+
+vbox_msg="Deteutóse un entornu de VirtualBox \n\n $a L'instalador va fornir virtualbox-guest-utils."
+
+vmware_msg="Deteutóse un entornu de VMware \n\n $a L'instalador va fornir xf86-video-vmware, xf86-input-vmmouse y open-vm-tools."
+
+hyperv_msg="Deteutóse un entornu de Hyper-v \n\n $a L'instalador va fornir xf86-video-fbdev."
+
+vm_msg="Deteutóse un entornu de máquina virtual \n\n $a L'instalador va fornir los controladores predeterminaos."
+
+bluetooth_msg="Deteutóse una interfaz Bluetooth. \n\n $a ¿Prestaríate instalar bluez y bluez-utils? \n $a Ríquense pa usala."
+
+blueman_msg="¿Prestaríate instalar blueman? \n\n $a Esbilla Sí pa instalar esti xestor gráficu."
+
+btenable_msg="Activando'l Bluetooth…"
+
+nwmanager_msg0="Activando NetworkManager…"
+
+nwmanager_msg1="Activando netctl…"
+
+vbox_enable_msg="Activando los servicios del sistema virtual…"
+
+efi_man_msg="Deteutóse una partición EFI. \n\n $a ¿Prestaríate activar l'arrinque EFI?"
+
+efi_err_msg="$error Yá se creó un puntu de montaxe en «/boot» \n\n Volvi montar la patición EFI como /boot, por favor."
+
+efi_err_msg1="$error Alcontráronse munches particiones EFI pèro nun se montaron. \n\n Monta una partición EFI en «/boot» y volvi tentalo, por favor."
+
+vfat_msg="Deteutóse una partición del sistema EFI. \n\n $a Ríquese VFAT pa crar una partición EFI qu'arrinque."
+
+loader_type_msg="Esbilla'l cargador d'arrique que desees: \n\n $a El predetermináu ye grub"
+
+loader_msg="El gran cargador unificáu d'arrinque"
+
+loader_msg1="El xestor d'arrinque de SysLinux"
+
+loader_msg2="El cargador d'arrinque de Systemd"
+
+loader_msg3="El cargador d'arrinque EFISTUB"
+
+failed_msg="$error Falló la instalación de paquetes nel raigañu nuevu. \n\n $a Mira'l ficheru anarchy.log de «/tmp» pa más información, por favor."
+
+shell_msg="Esbilla la shell de comandos que desees \n\n $a La predeterminada ye bash"
+
+nvidia_modeset_msg="Would you like to enable Nvidia DRM kernel mode setting? \n\n $a Direct Rendering Manager Kernel Module."
+
+nvidia_340msg="Your chipset is supported by nvidia-340xx legacy drivers. \n\n $a Continue installing nvidia-340xx? graphics drivers"
+
+nvidia_390msg="Your chipset is supported by nvidia-390xx legacy drivers. \n\n $a Continue installing nvidia-390xx? graphics drivers"
+
+nvidia_curmsg="Your chipset is supported by the latest nvidia drivers. \n\n $a Continue installing nvidia graphics drivers?"
+
+ucode_msg="¿Prestaríate instalar intel-ucode? \n\n $a Anovamientos pal microcódigu de les CPUs d'Intel."
+
+ucode_failed_msg="Intel ucode failed to install for unknown reason. Please check (after install): /tmp/anarchy.log"
+
+shrc_msg="Esbilla la configuración pa zsh que desees:"
+
+shrc_msg1="Default Anarchy RC"
+
+shrc_msg2="Oh-My-Zsh Plugin & RC"
+
+shrc_msg3="Clean ZSH install no RC"
+
+shrc_msg4="grml-zsh-config"
+
+nano_msg="Un editor de testos amigable"
+
+vim_msg="Un editor avanzáu de testos"
+
+ssh_msg="¿Activar el sirvidor SSH nel arrinque? \n\n $a Activa'l sirvidor de shell segura"
+
+ftp_msg="¿Activar el sirvidor FTP nel arrinque? \n\n $a Activa'l sirvidor de tresferencia de ficheros"
+
+apache_msg="¿Activar el sirvidor Apache nel arrinque? \n\n $a Activa'l sirvidor de HTTP"
+
+nginx_msg="¿Activar el sirvidor Nginx nel arrinque? \n\n $a Activa'l sirvidor de HTTP"
+
+cups_msg="¿Activar CUPS nel arrinque? \n\n $a Activa'l sistema d'imprentación"
+
+part_util="Un editor de particiones gráficu"
+
+part_util0="Un editor de particiones semigráficu"
+
+part_util1="Editor de particiones en mou testu"
+
+part_util2="Un editor de particiones GPT"
+
+}
+
+load_msg() {
+
+wait_load="\n Espera…"
+
+connection_load="Espera mentanto probamos la to conexón…"
+
+boot_load="Creando la partición d'arrinque…"
+
+swap_load="Creando l'espaciu d'intercambéu…"
+
+frmt_load="Formatiando…"
+
+mnt_load="Montando…"
+
+pv_load="Creando los volúmenes físicos"
+
+pv_load="Creando los volúmenes llóxicos"
+
+encrypt_load="Cifrando la unidá…"
+
+mirror_load0="Recuperando la llista d'espeyos nueva…"
+
+mirror_load1="Espera mentanto se clasifiquen los espeyos…"
+
+efi_load1="Configurando l'arrinque EFI…"
+
+grub_load1="Instalando GRUB na unidá…"
+
+grub_load2="Configurando GRUB…"
+
+syslinux_load="Instalando syslinux na unidá…"
+
+uefi_config_load="Espera mentanto se configura'l kernel pa UEFI…"
+
+f2fs_config_load="Espera mentanto se configura'l kernel pa F2FS…"
+
+kernel_config_load="Espera mentanto se configura'l kernel…"
+
+encrypt_load1="Espera mentanto se configura'l kernel pal cifráu…"
+
+dhcp_load="Activando'l DHCP…"
+
+ssh_load="Activando'l SSH…"
+
+cups_load="Activando'l sistema d'imprentación…"
+
+ftp_load="Activando'l FTP…"
+
+http_load="Activando'l HTTP…"
+
+dm_load="Activando lightdm…"
+
+pacman_load="Espera mentanto anovamos les bases de datos de pacman…"
+
+}
+
+part_msg() {
+
+method0="Particionáu automáticu"
+
+method1="Particionáu automáticu con LVM cifráu"
+
+method2="Particionáu manual"
+
+}
+
+fs_msg() {
+
+fs0="El 4u sistema de ficheros estendíu"
+
+fs1="El 3er sistema de ficheros estendíu"
+
+fs2="El 2u sistema de ficheros estendíu"
+
+fs3="El sistema de ficheros d'árbole en B"
+
+fs4="Journaled File System"
+
+fs5="El sistema de ficheros Reiser"
+
+fs6="El sistema de ficheros F2FS"
+
+fs7="El sistema de ficheros VFAT/FAT32"
+
+fs8="El sistema de ficheros X"
+
+}
+
+graphics_msg() {
+
+gr1="Vesa ${os} $drivers"
+gr2="NVIDIA $drivers"
+gr4="AMD/ATI ${os} $drivers"
+gr5="Intel ${os} $drivers"
+gr6="NVIDIA $drivers"
+gr7="NVIDIA 340xx $drivers"
+gr8="NVIDIA ${os} $drivers"
+gr9="NVIDIA 390xx $drivers"
+gr10="AMDGPU Video ${drivers}"
+
+}
+
+menu_msg() {
+
+menu="Elementos del menú: \n\n $a Primi «Sesión en llinia de comandos» pa executar comandos personalizaos\n $a Volvi al instalador con «anarchy»'"
+
+menu0="Re-Set Locale"
+
+menu1="Fusu horariu"
+
+menu2="Mapa de tecles"
+
+menu3="Particionáu"
+
+menu4="Update Mirror list"
+
+menu5="Instalar el sistema base"
+
+menu11="Reaniciar el sistema"
+
+menu12="Colar del instalador"
+
+menu13="Sesión en llinia de comandos"
+
+menu_err_msg3="La unidá yá ta montada y preparada pa instalar el sistema. \n\n $a ¿De xuru que quies volver al menú de particionáu?"
+
+menu_exit_msg="El sistema entá nun s'instaló… \n\n $a ¿De xuru que queis colar?"
+
+steam_add_msg="La instalación de Steam rique l'activación del depósitu multilib. \n\n $a ¿Activalu agora?"
+
+audio="Audiu"
+
+audio_msg="Software p'audiu =>"
+
+database="Bases de datos"
+
+database_msg="Software pa bases de datos =>"
+
+graphic="Gráficos"
+
+graphic_msg="Software pa gráficos =>"
+
+internet="Internet"
+
+internet_msg="Software pa internet =>"
+
+multimedia="Multimedia"
+
+multimedia_msg="Software multimedia =>"
+
+office="Oficina"
+
+office_msg="Ofimática =>"
+
+programming="Programación"
+
+program_msg="Software pa programar =>"
+
+terminal="Terminal"
+
+terminal_msg="Emuladores de terminal =>"
+
+text_editor="Editores de testu"
+
+text_editor_msg="Software pa editar testos =>"
+
+util="Utilidaes"
+
+util_msg="Utilidaes de software =>"
+
+servers="Sirvidor"
+
+servers_msg="Software pa sirvidores =>"
+
+fonts="Fontes"
+
+fonts_msg="Fontes pa GNU/Linux =>"
+
+games="Xuegos"
+
+games_msg="Xuegos pa GNU/Linux =>"
+
+extra_de="Escritorios"
+
+extra_de_msg="Más entornos d'escritoriu =>"
+
+extra_wm="Xestores de ventanes"
+
+extra_wm_msg="Más xestores de ventanes =>"
+
+reboot0="Reaniciar el sistema"
+
+reboot1="Return To Command Prompt"
+
+reboot2="Facer chroot nel sistema instaláu"
+
+reboot3="Amestar más cuentes d'usuariu"
+
+reboot4="Ver el rexistru de la instalación"
+
+reboot5="Instalar más software"
+
+reboot6="Apagar el sistema"
+
+customized_de="Escritorios personalizaos"
+
+customized_de_msg="Entornos d'escritoriu personalizaos =>"
+
+more_de="Entornos d'escritoriu llimpios"
+
+more_de_msg="Entornos d'escritoriu predeterminaos =>"
+
+more_wm="Más xestores de ventanes"
+
+more_wm_msg="Xestores de ventanes predeterminaos =>"
+
+}
+
+op_msg() {
+
+welcome_op_msg=" -| Anarchy Linux |- "
+
+connection_op_msg=" -| Conexón a la rede |- "
+
+locale_op_msg=" -| Locale |- "
+
+zone_op_msg=" -| Fusu horariu |- "
+
+key_op_msg=" -| Mapa de tecles |- "
+
+part_op_msg=" -| Partition Drive |- "
+
+partload_op_msg=" -| Particionáu |- "
+
+manual_op_msg=" -| Menú de particionáu |- "
+
+edit_op_msg=" -| Edición de particiones |- "
+
+mirror_op_msg=" -| Llista d'espeyos |- "
+
+install_op_msg=" -| Instalación del sistema |- "
+
+config_op_msg=" -| Configuración |- "
+
+host_op_msg=" -| Nome d'agospiu |- "
+
+passwd_op_msg=" -| Contraseña |- "
+
+user_op_msg=" -| Amiestu d'usuarios |- "
+
+user_op_msg1=" -| Edición d'un usuariu |- "
+
+de_op_msg=" -| Instalación del escritoriu |- "
+
+software_op_msg=" -| Instalación de software |- "
+
+complete_op_msg=" -| Instalación completada |- "
+
+menu_op_msg=" -| Menú principal |- "
+
+install_opt_msg="Select your desired install option: \n\n $a Quick install select 'Anarchy-Desktop' or 'Anarchy-Server' \n $a Advanced install options select 'Anarchy-Advanced'"
+
+install_opt0="Esbilla manual de les opciones"
+
+install_opt1="Instalación rápida pal escritoriu"
+
+install_opt2="Instalación rápida pal escritoriu con kernel LTS"
+
+install_opt3="Instalación rápida pa sirvidores"
+
+install_opt4="Instalación rápida pa sirvidores con kernel LTS"
+
+}
+
+var_msg() {
+
+gtk3_var="Install $DE gtk3? \n\n $a (experimental version)"
+
+drive_var="¡ALVERTENCIA! Van desaniciase tolos datos del preséu \n\n $a Allugamientu: /dev/$DRIVE \n $a Tamañu: $drive_gigs GiB \n $a Sistema de ficheros: $FS \n $a ¿Prestaríate siguir?"
+
+drive_var1="¡ALVERTENCIA! Van desaniciase tolos datos del preséu \n\n $a Allugamientu: /dev/$DRIVE \n $a Tamañu: $drive_gigs GiB \n $a Sistema de ficheros: $FS \n $a Espaciu d'intercambéu: $SWAPSPACE MiB \n $a ¿Prestaríate siguir?"
+
+drive_var2="¡ALVERTENCIA! Van desaniciase tolos datos del preséu \n\n $a Allugamientu: /dev/$DRIVE \n $a Tamañu: $drive_gigs GiB \n $a Sistema de ficheros: $FS \n $a Espaciu d'intercambéu $SWAPSPACE MiB \n $a Arrinque: UEFI \n $a ¿Prestaríate siguir?"
+
+drive_var3="¡ALVERTENCIA! Van desaniciase tolos datos del preséu \n\n $a Allugamientu: /dev/$DRIVE \n $a Tamañu: $drive_gigs GiB \n $a Sistema de ficheros: $FS \n $a Arrinque: UEFI \n $a ¿Prestaríate siguir?"
+
+encrypt_var0="¡Alvertencia! Esto va cifrar /dev/$DRIVE! \n\n $a ¿Siguir?"
+
+encrypt_var1="\nIntroduz una contraseña pa /dev/$DRIVE \n\n $a Decátate qu'esta contraseña úsase pa descifrar la unidá nel arrinque"
+
+encrypt_var2="\nVolvi introducir la contraseña pa /dev/$DRIVE. \n\n $a Confirmación de la contraseña:"
+
+root_var="Create a new root mount point: \n $a Note: Root mount point must be created first. \n\n $a Partition: /dev/$part \n $a Size: $part_size \n\n Create new root mount point?"
+
+manual_part_var0="Partition already mounted. \n\n $a Mount point: $part_mount \n $a Partition: /dev/$part \n $a Size: $part_size\n\n Edit to create new mount point"
+
+manual_part_var1="¿Prestaríate desmontar la partición /dev/$part y desaniciar el puntu de montaxe $part_mount? \n\n $a Decátate qu'esto va desmontar toles particiones montaes so"
+
+manual_part_var2="Warning: partition: /dev/$part is set as your root filesystem, this will erase all mount point under it. \n\n $a Are you sure you want to continue?"
+
+manual_part_var3="¿Prestaríate editar l'esquema de particiones agora? \n\n $a Unidá: /dev/$part \n $a Tamañu: $part_size \n\n Nun escaezas primir Write pa guardar los cambeos"
+
+manual_new_part_var="¿Prestaríate crear un puntu de montaxe? \n\n $a Partición: /dev/$part \n $a Tamañu: $part_size \n\n Edita pa crear un puntu de montaxe"
+
+manual_swap_var="Would you like to remove SWAP filesystem from /dev/$part? \n\n $a Select 'yes' to remove SWAP filesystem."
+
+mount_warn_var="¡Alvertencia! El discu /dev/$part contién particiones montaes. \n\n $a ¿Prestaríate desmontales y editar l'esquema de particiones?"
+
+mnt_var0="Esbilla un puntu de montaxe nuevu pa /dev/$part: \n\n $a Primi «Personalizar» pa crear unu nuevu"
+
+fs_err_var="$error Ha configurase una partición «/boot» al usar el sistema de ficheros $FS. \n\n $a Volviendo al menú de particionáu…"
+
+install_var="¿Apenzar cola instalación del sistema base d'Arch Linux en /dev/$DRIVE?\n\n $a Tamañu de descarga: $software_size \n $a Tiempu d'instalación estimáu: $down_min minutes.\n $a Velocidá estimada: $connection_speed $connection_rate \n $a Paquetes a amestar: \n\nbase${base_install}"
+
+user_edit_var="Datos:\n $a Nome d'usuariu: $user\n $a Shell: $user_sh\n $a Nome real : $full_user\n $a Sudo: $sudo"
+
+user_shell_var="Select a new shell for $user:\n $a Set user login shell"
+
+user_var0="\nPlease enter a new login password for: $user \n\n $a Set $user password"
+
+user_var1="\nVolvi introducir la contraseña pa $user \n\n $a Confirmación de la contraseña pa $user"
+
+sudo_var="¿Activar sudo pa $user? \n\n $a Da privilexos alministrativos a $user."
+
+sudo_var1="¿Desactivar sudo pa $user? \n\n $a Quita los privilexos alministrativos a $user."
+
+deluser_var="Delete user: $user? \n\n $a Removes user account from system"
+
+root_confirm_var="Confirmación de la creación del puntu de montaxe \n\n $a Puntu de montaxe: «/» \n $a Partición: /dev/$part \n $a Tamañu: $part_size \n $a Sistema de ficheros: $FS \n\n ¿Escribir los cambeos nel discu?"
+
+part_confirm_var="¿Confirmar la creación del puntu de montaxe? \n\n $a Puntu de montaxe: $mnt \n $a Partición: /dev/$part \n $a Tamañu: $part_size \n $a Sistema de ficheros: $FS \n\n ¿Escribir los cambeos nel discu?"
+
+software_confirm_var0="¿Amestar los paquetes de darréu a la llista d'instalación? \n\n $a Númberu de paquetes: $software_int \n $a Tamañu de la descarga: $software_size \n $a Paquetes a amestar: \n\n$software_list"
+
+software_confirm_var1="¿Siguir cola instalación de software? \n\n $a Númberu de paquetes: $software_int \n $a Tamañu total de la descarga: $software_size \n $a Tiempu estimáu de la instalación: $down_min minutes \n $a Velocidá estimada: $connection_speed $connection_rate \n $a Paquetes a instalar: \n\n$download_list"
+
+efi_var="Deteutóse un sistema EFI montáu en $esp_part \n\n $a ¿Prestaríate activar l'arrinque EFI?"
+
+vfat_var="El sistema EFI montáu en $esp_part nun contién un sistema de ficheros VFAT válidu. \n\n $a ¿Prestaríate formatialu?"
+
+efi_mnt_var="La partición EFI deteutada en $esp_part nun se montó. \n\n ¿Montala agora?"
+
+f2_err_var="$error Has crear una partición d'arrinque pa usar el sistema de ficheros $FS. \n\n $a Volviendo al menú de particionáu…"
+
+}
+
+load_var_msg() {
+
+load_var0="Particionando /dev/$DRIVE…"
+
+load_var1="Espera mentanto se crea'l sistema de ficheros $FS…"
+
+install_load_var="$h\nInstalando Arch Linux en: /dev/$DRIVE \n\n $a Tamañu de la descarga: $software_size"
+
+software_load_var="$h\nInstalando más software \n\n $a Tamañu de la descarga: $software_size"
+
+locale_load_var="Xenerando la locale $LOCALE…"
+
+zone_load_var="Afitando'l fusu horariu $ZONE…"
+
+}
+
+de_msg() {
+
+de0="L'escritoriu llixeru XFCE"
+de1="L'escritoriu llixeru Mate"
+de2="L'escritoriu llixeru LXDE"
+de3="L'escritoriu llixeru LXQT"
+de4="L'escritoriu llixeru Gnome"
+de5="L'escritoriu Cinnamon"
+de6="L'escritoriu Plasma de KDE"
+de7="L'escritoriu Enlightenment"
+de8="El xestor de ventanes Openbox"
+de9="El xestor de ventanes Awesome"
+de10="Xestor de ventanes en mosaicu i3"
+de11="El xestor de ventanes Fluxbox"
+#de12="El xestor de ventanes dwm"
+de13="El xestor de ventanes bspwm"
+de14="L'escritoriu Deepin"
+de15="XFCE edición Anarchy"
+de16="El xestor de ventanes xmonad"
+de17="L'escritoriu llixeru Budgie"
+de18="Openbox edición Anarchy"
+de19="L'escritoriu Gnome Classic"
+#de20="El xestor de ventanes WindowMaker"
+de21="El xestor de ventanes Sway"
+de22="Gnome edición Anarchy"
+de23="Cinnamon edición Anarchy"
+de24="Budgie edición Anarchy"
+de25="El xestor de ventanes Qtile"
+
+}
+
+dm_msg() {
+
+dm0="El xestor de ventanes de Gnome"
+dm1="El xestor de ventanes LightDM"
+dm2="El xestor de ventanes LXDM"
+dm3="El xestor de ventanes SDDM"
+
+}
+
+soft_msg() {
+
+# Audio
+audio0="Un programa pa la edición d'audiu"
+audio1="Un editor avanzáu d'audiu"
+audio2="Reproductor de música per CLI"
+audio3="Kit de conexones d'audiu JACK"
+audio4="Un visualizador de música"
+audio5="Linux MultiMedia Studio"
+audio6="Music Player Daemon"
+audio7="GUI client for MPD"
+audio8="PulseAudio Volume Control"
+audio9="Console frontend for Pandora"
+audio10="Reproductor musical y organizador de biblioteques"
+audio11="Un ecualizador pa pulseaudio"
+audio13="un reproductor d'audiu basáu en Qt5"
+audio14="Una aplicación pa reproducir música"
+
+# Database
+db0="Una base de datos empobinada a documentos"
+#db1="Una base de datos de códigu abiertu y perpotente"
+db2="Una implementación de SQL pa sirvidores"
+db3="El módulu sqlite pa PHP"
+db4="Advanced key-value store"
+db5="Una base de datos NoSQL poderosa y escalable"
+db6="Un motor de bases de datos escritu en C"
+sys30="Un sirvidor rápidu de bases de datos SQL"
+sys31="Sophisticated object-relational DBMS"
+sys32="Una ferramienta web p'alministrar MySQL"
+
+# Internet
+net0="Restolador web Chromium"
+net1="Unn veceru pa FTP, FTPS y SFTP"
+net2="Restolador web Firefox"
+net3="Console Web Browser"
+net4="Visualiza vídeos de YouTube"
+net5="Un restolador web rápidu y seguru"
+net6="Un veceru de correu y noticies"
+net7="Un veceru per consola pa torrent"
+net8="Un veceru gráficu pa torrent"
+net9="Un veceru pa IRC perconfigurable"
+net10="Un veceru pa IRC basáu en GTK"
+net11="Un veceru pa IRC basáu en GTK"
+net12="Un restolador web llixeru"
+
+# Fonts
+# font0="Fontes unicode"
+font1="Fontes que sofiten les llingües CN, JP y KR"
+
+# Games
+game0="Free FPS focused mainly on online multiplayer"
+game1="Port of classic BSD command line games"
+game2="Multiperson, first-person tank shooter"
+game3="Un simulador de códigu abiertu"
+game4="Classic UNIX-based chess game"
+game5="Paezse a los xuegos de SuperMario"
+game6="Un xuegu de karts nel que sal Tux"
+game7="Un xuegu modernu de disparos en primer persona"
+game8="Fast paced multiplayer FPS"
+game9="Un xuegu de disparos en primer persona y llibre"
+game10="El sistema d'entrega dixital de software de Valve"
+game11="AisleRiot Solitaire collection"
+
+# Graphic
+graphic0="3D graphics creation suite"
+graphic1="Photography development application"
+graphic2="GNU Image Manipulation"
+graphic3="Set of tools for drawing graphs"
+graphic4="Command-line image manipulation program"
+graphic5="Un programa d'edición y dibuxu"
+graphic6="Visor d'imáxenes llixeru"
+graphic7="Un programa poderosu pa procesar imáxenes en bruto"
+graphic8="Un sistema de procesamientu d'imáxenes"
+graphic9="Un editor profesional de gráficos vectoriales"
+graphic10="Pinta iconos y gráficos basaos en píxeles"
+graphic11="Una aplicación pa pintores dixitales"
+
+# Multimedia
+media0="Multithreaded video transcoder"
+media1="Media Player"
+media2="Software pa editar vídeos"
+media3="Software pa capturar la pantalla"
+media4="A free front-end for MPlayer"
+media5="Un reproductor multimedia de Gnome"
+media6="El reproductor multimedia VLC"
+media7="Un reproductor multimedia basáu en MPlayer"
+media8="Códecs multimedia"
+media9="Un editor completu de videu pa GNU/Linux"
+media10="Screencast GIF tool"
+media11="Un reproductor multimedia poderosu y cenciellu"
+media12="Baxa vídeos y audiu de YouTube"
+
+# Office
+office0="Free word processing"
+office1="Graphic Art And Office Suite"
+office2="Powerful spreadsheet application"
+office3="Powerful spreadsheet application"
+office4="Office word processor latest"
+office5="Office word processor maintenance"
+office6="Lightweight PDF and XPS viewer"
+office7="Un visor de documentos minimalista"
+office8="un editor de testos ofimáticos collaborativu"
+office9="Office document viewer for GNOME"
+office10="Crea etiquetes y cartes de presentación"
+office11="Software d'espublizamientu pal escritoriu"
+
+# Programming
+prg0="Common Lisp interpreter, compiler and debugger"
+prg1="El compilador y llinguaxe de programación D"
+prg2="El SDK del llinguaxe de programación Dart"
+prg3="El llinguaxe de programación Go"
+prg4="Developer tools for Go language"
+prg5="Java Runtime Environments"
+prg7="L'entornu de desendolcu pa Java 8 d'OpenJDK"
+prg8="OpenJFX 8 client application platform"
+prg9="Un llinguaxe de programación completu"
+prg10="Un llinguaxe xeneralista pa crear scripts"
+prg11="Un llinguaxe d'altu nivel pa facer scripts"
+prg12="Un llinguaxe empobináu a oxetos"
+prg13="Object-oriented and functional based"
+prg14="L'entornu de desendolcu pa Java 11 d'OpenJDK"
+prg15="L'entornu de desendolcu pa Java 12 d'OpenJDK"
+
+# Terminal
+term0="Framebuffer Terminal Emulator"
+term1="Terminal estenderexable de Gnome"
+term2="Simple terminal emulator"
+term3="Light Weight Terminal"
+term4="Emulador de terminal urxvt"
+term5="Emulador de terminal Terminator"
+term6="Emulador de terminal de XFCE"
+term7="Terminal estenderexable (estilu Quake)"
+term8="Un emulador de terminal cenciellu pa X"
+term9="Una terminal cenciella y basada en VTE"
+term10="Un emulador de terminal basáu n'EFL"
+term11="Una terminal inspirada en Quake y Doom"
+term12="Una terminal qu'imita a les pantalles catódiques"
+term13="A tiling terminal emulator for Linux using GTK+ 3"
+
+# Text editor
+edit0="OS in a text editor"
+edit1="Un editor de testos qu'usa GTK2"
+edit2="Editor de testos de Gnome"
+edit3="Una interfaz gráfica pa Vim"
+edit4="Editor de testos de XFCE"
+edit5="Una biforcación popular del editor VIM"
+edit6="Una biforcación de vi"
+edit7="Atom feature rich text editor"
+edit8="Un editor de testos WYSIWYG"
+
+# Shell
+shell0="Shell de comandos DASH (Debian Almquist shell)"
+shell1="Shell de comandos Fish (amigable ya interactiva)"
+shell2="Shell de comandos Korn (ksh pero ameyoráu)"
+shell3="Shell de comandos tcsh/C (la shell de C)"
+shell4="Shell de comandos Z-Shell (potente y con munches opciones)"
+shell5="Bourne again shell (la shell predeterminada de GNU/Linux)"
+
+# Server
+srv1="Un paquete con Apache MariaDB PHP pa Linux"
+srv2="Un paquete con Nginx MariaDB PHP pa Linux"
+srv3="Sirvidor HTTP/Proxy Nginx (rama estable)"
+srv4="Sirvidor HTTP/Proxy Nginx (rama en desendolcu)"
+srv5="Light Flexible HTTP Server"
+srv6="Sirvidor rápidu y seguru de corréu"
+srv7="Un degorriu FTP perseguru"
+srv8="Full-featured Web proxy cache server"
+srv9="Sirvidor de ficheros SAMBA y de dominios AD"
+srv10="The ISC DNS Server"
+srv11="El sirvidor d'imprentación CUPS"
+sys1="Sirvidor HTTP d'altu rindimientu Apache"
+sys10="Degorriu de shell segura"
+
+# System
+sys2="Un supervisor de sistemes llixeru pa X"
+sys3="Source control management"
+sys4="Xestión de particiones y discos"
+sys5="Un sirvidor de mures pa la consola"
+sys6="Información de procesos per CLI"
+sys7="Una utilidá pa ver la wiki d'Arch per CLI"
+sys8="Una suite pa grabar CDs/DVDs"
+sys9="Analizador de redes per CLI"
+sys11="Screen de GNU"
+sys12="Amuesa la información del sistema"
+sys13="Simple command-line screenshot"
+sys14="Multiplexor de terminal"
+sys15="Xestor de ficheros a dos paneles"
+sys16="Virtualización d'escritorios"
+sys17="Un tornafuéu que nun ye complicáu"
+sys18="Wget CLI downloader"
+sys19="Un menú dinámicu y llixeru pa X"
+sys20="Un xestor de ficheros per consola"
+sys21="Un xestor de ficheros llixeru pa X"
+sys22="Desanicia ficheros que nun precises"
+#sys23="Un xestor de ficheros gráficu pa X"
+sys24="Una calculadora gráfica"
+sys25="Una calculadora básica per CLI"
+sys26="Un xestor gráficu de paquetes de Gnome"
+sys27="Ferramientes de Gnome"
+sys28="Utillidaes y controladores pa NTFS"
+sys34="Un curiapantalles pa X"
+
+}
+
+#####################################################################
+### END TRANSLATION ##################################################
+### DO NOT EDIT BELOW THIS LINE! ########################################
+####################################################################
+a="\Z2*\Zn"
+h="\Z2<\Z1#\Z2>\Zn"
+
+if "$reload" ; then
+	var_msg
+	load_var_msg
+	translate_this_var
+else
+	dialog_msg
+	main_msg
+	load_msg
+	part_msg
+	fs_msg
+	graphics_msg
+	de_msg
+	dm_msg
+	menu_msg
+	soft_msg
+	op_msg
+	translate_this
+fi

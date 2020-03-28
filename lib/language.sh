@@ -21,6 +21,7 @@ language() {
     op_title=" -| Language Select |- "
     ILANG=$(dialog --nocancel --menu "\nAnarchy Installer\n\n \Z2*\Zn Select your install language:" 20 60 10 \
         "English" "-" \
+        "Asturian" "Asturianu" \
         "Bulgarian" "Български" \
         "Dutch" "Nederlands" \
         "French" "Français" \
@@ -41,6 +42,7 @@ language() {
 
     case "$ILANG" in
         "English") export lang_file="${anarchy_directory}"/lang/anarchy-english.conf ;;
+        "Asturian") export lang_file="${anarchy_directory}"/lang/anarchy-bulgarian.conf lib=ast bro=ast ;;
         "Bulgarian") export lang_file="${anarchy_directory}"/lang/anarchy-bulgarian.conf lib=bg bro=bg ;;
         "Dutch") export lang_file="${anarchy_directory}"/lang/anarchy-dutch.conf lib=nl bro=nl ;;
         "French") export lang_file="${anarchy_directory}"/lang/anarchy-french.conf lib=fr bro=fr ;;
